@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hajime Pack Compressor</title>
+    <!-- Link ke CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Hajime Pack -->
+    <header>
+      <h1>Hajime Pack Compressor</h1>
+      <button id="manualBtn">Manual Book</button>
+    </header>
+    <!-- Fitur utama -->
+    <main>
+      <section class="feature" id="wordToPdf">
+        <h2>Word ke PDF</h2>
+        <input type="file" accept=".doc,.docx" id="wordInput" />
+        <button onclick="convertWordToPdf()">Convert</button>
+        <div id="wordPdfResult"></div>
+      </section>
+      <section class="feature" id="imgToPdf">
+        <h2>Gambar ke PDF</h2>
+        <input type="file" accept="image/*" multiple id="imgInput" />
+        <button onclick="convertImgToPdf()">Convert</button>
+        <div id="imgPdfResult"></div>
+      </section>
+      <section class="feature" id="wordToPpt">
+        <h2>Word ke PPT</h2>
+        <input type="file" accept=".doc,.docx" id="wordPptInput" />
+        <button onclick="convertWordToPpt()">Convert</button>
+        <div id="wordPptResult"></div>
+      </section>
+    </main>
+    <!-- Modal Manual Book -->
+    <div id="manualModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeManual">&times;</span>
+        <h2>Manual Book</h2>
+        <ol>
+          <li>Pilih fitur yang diinginkan.</li>
+          <li>Upload file sesuai format.</li>
+          <li>Klik Convert dan download hasilnya.</li>
+        </ol>
+      </div>
+    </div>
+    <!-- Link ke JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+/* Tema Hajime Pack: biru, putih, hitam */
+body {
+  background: linear-gradient(135deg, #0f2027, #2c5364, #1c92d2);
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+header {
+  background: #1c92d2;
+  color: #fff;
+  padding: 24px 0 16px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+#manualBtn {
+  background: #fff;
+  color: #1c92d2;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s, color 0.2s;
+}
+#manualBtn:hover {
+  background: #1c92d2;
+  color: #fff;
+  border: 1px solid #fff;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 40px 0;
+}
+.feature {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  padding: 32px 24px;
+  min-width: 300px;
+  max-width: 350px;
+  text-align: center;
+}
+.feature h2 {
+  color: #1c92d2;
+  margin-bottom: 18px;
+}
+input[type="file"] {
+  margin-bottom: 16px;
+  color: #fff;
+}
+button {
+  background: #1c92d2;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover {
+  background: #fff;
+  color: #1c92d2;
+  border: 1px solid #1c92d2;
+}
+/* Modal Manual Book */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background: #fff;
+  color: #222;
+  margin: 10% auto;
+  padding: 32px 24px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+.close {
+  color: #1c92d2;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
